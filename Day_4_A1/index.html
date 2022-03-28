@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Hotel Pricing -->
+    <style>
+        h1{
+            font-size:60px;
+            text-align:center;
+            color: #b8860b;
+        }
+        .ent{
+            margin-top:-30px;
+            text-align:center;
+            margin-bottom:50px;
+        }
+        .containers{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            width:80%;
+            margin :  auto;
+        }
+        .image{
+            width: 100%;
+        }
+        .text{
+            text-align:center;
+            font-weight:bold;
+        }
+        .price{
+            color: #daa520;
+            text-align:center;
+            font-weight:bold;
+        }
+
+        @media all and (min-width:451px) and (max-width:850px) {
+        .containers{
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            width:80%;
+            margin : auto;
+        }
+    }
+
+        @media all and (min-width:86px) and (max-width:450px) {
+        .containers{
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            width:80%;
+            margin : auto;
+        }
+        h1{
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+    <div><h1>Rooms & Suits</h1></div>
+    <div class="ent"><p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,<br> 
+        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the <br> Semantics, a large language ocean.</p></div>
+    <div class="containers">
+        <div>
+            <img class="image" src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="">
+            <h2 class="text">Single Room</h2>
+            <p class="price">90$ / PER NIGHT</p>
+        </div>
+        <div>
+            <img class="image" src="https://preview.colorlib.com/theme/sogo/images/ximg_2.jpg.pagespeed.ic.Y_xvNxfEhu.webp" alt="">
+            <h2 class="text">Family Room</h2>
+            <p class="price">120$ / PER NIGHT</p>
+        </div>
+        <div>
+            <img class="image" src="https://preview.colorlib.com/theme/sogo/images/ximg_3.jpg.pagespeed.ic.mYPnC0rXDl.webp" alt="">
+            <h2 class="text">President Room</h2>
+            <p class="price">250$ / PER NIGHT</p>
+        </div>
+    </div>
+</body>
+</html>
