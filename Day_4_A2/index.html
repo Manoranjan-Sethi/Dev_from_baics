@@ -44,6 +44,17 @@
             text-align: center;
             font-weight: bold;
         }
+
+        @media all and (min-width:451px) and (max-width:850px) {
+            .containers {
+                grid-template-columns: repeat(5,1fr);
+            }
+        }
+        @media all and (min-width:86px) and (max-width:450px){
+            .containers {
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
     </style>
 </head>
 <body style="background-color: #FFFAFA">
