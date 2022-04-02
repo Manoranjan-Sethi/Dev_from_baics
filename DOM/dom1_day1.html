@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- marriage_age_validator -->
+</head>
+<body>
+    <div>
+        <label> Choose Your Gender</label>
+        <select id="gender">
+            <option value="">--choose--</options>
+                <option value="male">Male</option>Male</option>
+                <option value="female">Female</option>
+        </select>
+    </div>
+    <div>
+        <label> Choose Your Age</label>
+        <input type="number" id="age" min="10" max="100">
+        <button onclick="press()"> SUBMIT </button>
+    </div>
+</body>
+<script>
+    let gender = document.getElementById('gender')
+    function press() {
+        if(gender.value=='male'){
+            if(document.getElementById('age').value>=21){
+                alert("You are eligible for Marriage");
+            }else{
+                alert("You are not eligible for Marriage");
+            }
+        }else if(gender.value=='female'){
+            if(document.getElementById('age').value>=18){
+                alert("You are eligible for Marriage");
+            }else{
+                alert("You are not eligible for Marriage");
+            }
+        }
+    }
+</script>
+</html>
