@@ -7,6 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="number" id="num1" placeholder="number1"></input>
+    <input type="number" id="num2" placeholder="number2"></input>
+    <button onclick="multiply()"> MULTIPLY </button>
+    <button onclick="power()"> EXPONENT </button>
 </body>
+<script>
+    function multiply() {
+        let a = document.getElementById("num1").value
+        let b = document.getElementById("num2").value
+        c= a*b
+        // console.log(c)
+        alert(`The answer is ${c}`)
+    }
+    function power() {
+        let c = document.getElementById("num1").value
+        let d = document.getElementById("num2").value
+        if (d == 0)
+        return 1;
+         
+         var answer = c;
+        var increment = c;
+        var i, j;
+     
+        for (i = 1; i < d; i++)
+        {
+            for (j = 1; j < c; j++)
+            {
+                answer += increment;
+            }
+            increment = answer;
+        }
+     console.log(answer)
+    // return answer;
+    alert(`The answer is ${answer}`)
+    }
+</script>
 </html>

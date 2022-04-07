@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id = "continent_select">
+        <option>--choose country--</option>
+        <option value = "India">India</option>
+        <option value="United States of America">United States of America</option>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Australia">Australia</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Sweden">Sweden</option>
+    </select>
+    <button onclick="myButton()"> SUBMIT </button>
+</body>
+<script>
+    
+    function myButton() {
+        let country = document.getElementById("continent_select").value;
+        if(country=="India" || country== "China" || country== "Nepal" || country== "Singapore"){
+            alert("Your continent is Asia")
+        }else if(country=="United States of America" || country== "Mexico" || country=="Canada"){
+            alert("Your continent is North America")
+        }else if(country=="Australia"){
+            alert("Your continent is Australia")
+        }else if(country=="France" || country== "Germany" || country== "Sweden"){
+            alert("Your continent is Europe")
+        }else if(country=="South Africa" || country== "Nigeria"){
+            alert("Your continent is Africa")
+        }else if(country=="Argentina" || country=="Brazil" ){
+            alert("Your continent is South America")
+        }
+    }
+</script>
+
+</html>
