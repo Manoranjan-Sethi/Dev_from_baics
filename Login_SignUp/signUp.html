@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <h2>Create Account</h2>
+    <form action="">
+        <input type="text" placeholder="User Name" id="Name">
+        <input type="email" placeholder="User EMAIL" id="Email">
+        <input type="password" placeholder="Password" id="password">
+        <input type="submit">
+        <div><a href="login.html">Login</a></div>
+    </form>
+</body>
+<script>
+    document.querySelector('form').addEventListener('submit', signUp);
+
+    let userData;
+    if(localStorage.getItem('userData')==null){
+        userData = []
+    } else {
+        userData = JSON.parse(localStorage.getItem('userData'));
+    }
+
+    function signUp (){
+        event.preventDefault();
+        alert("Account Creation Success!")
+        var userObj= {
+            name: document.querySelector('#Name').value,
+            email: document.querySelector('#Email').value,
+            password: document.querySelector('#password').value
+        }
+        userData.push(userObj);
+        localStorage.setItem('userData', JSON.stringify(userData))
+    }
+</script>
+
+</html>
