@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid1 > div {
+            display: flex;
+        }
+        #grid1 {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            width: 75%;
+            margin-left: 200px;
+        }
+        .flex1 > div > img {
+            width: 50%;
+        }
+        #grid1 > div > div > img{
+            width: 50%;
+            padding-top: 30px;
+        }
+        #teachers {
+            background-color: #fafafa;
+            padding-top: 50px;
+
+        }
+        #teachers > div > h1, p {
+            text-align: center;
+        }
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+            padding: 40px;
+        }
+        .grid2 > div > img {
+            width: 100%;
+        }
+        .grid2 > div > p:nth-child(3){
+            text-align: center;
+            color: chocolate;
+        }
+        .grid2 > div > h3 {
+            text-align: center;
+        }
+        @media all and (min-width:451px) and (max-width:850px){
+            #grid1{
+                grid-template-columns: repeat(2,1fr);
+                width: 100%;
+                margin-left: -15px;
+                padding-left: 30px;
+
+            }
+            .grid2 {
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media all and (min-width:86px) and (max-width:450px){
+            #grid1{
+                grid-template-columns: repeat(1,1fr);
+                margin-left: -10px;
+                padding-left: 40px;
+            }
+            .grid2 {
+                grid-template-columns: repeat(1,1fr);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="grid1">
+        <div>
+            <div><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" alt=""></div>
+            <div>
+                <h2>Business School</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" alt=""></div>
+            <div>
+                <h2>Business School</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" alt=""></div>
+            <div>
+                <h2>Business School</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" alt=""></div>
+            <div>
+                <h2>Business School</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" alt=""></div>
+            <div>
+                <h2>Business School</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk5I_fDBzmjg0CVgEqIuHWi7D8TvcsXlPHkJs0OgsyU9ifEvSE" alt=""></div>
+            <div>
+                <h2>Business School</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div id="teachers">
+        <div>
+            <h1>Certified Teachers</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi aliquid ex fuga at aspernatur fugit eaque.</p>
+        </div>
+        <div class="grid2">
+            <div>
+                <img src="https://static.wixstatic.com/media/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg/v1/fill/w_1440,h_960,al_c/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg" alt="">
+                <h3>Ankush Chimnani</h3>
+                <p>DSA Instructor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="https://static.wixstatic.com/media/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg/v1/fill/w_1440,h_960,al_c/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg" alt="">
+                <h3>Ankush Chimnani</h3>
+                <p>DSA Instructor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="https://static.wixstatic.com/media/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg/v1/fill/w_1440,h_960,al_c/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg" alt="">
+                <h3>Ankush Chimnani</h3>
+                <p>DSA Instructor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="https://static.wixstatic.com/media/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg/v1/fill/w_1440,h_960,al_c/7fa9fc_d0d926e12dcb45c0b27e0cccd52946c3~mv2.jpg" alt="">
+                <h3>Ankush Chimnani</h3>
+                <p>DSA Instructor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
