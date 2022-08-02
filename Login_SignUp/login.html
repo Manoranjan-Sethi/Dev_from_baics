@@ -17,7 +17,7 @@
 <script>
     document.querySelector('form').addEventListener('submit', login);
      
-     let registeredUser = JSON.parse(localStorage.getItem('UserData'));
+     let registeredUser = JSON.parse(localStorage.getItem('userData'));
      function login(){
          event.preventDefault();
          let enteredEmail = document.querySelector('#email').value;
@@ -26,10 +26,6 @@
          registeredUser.forEach(userData => {
              if(userData.email === enteredEmail  && userData.password === enteredPassword){
                  alert("Login Successful");
-                //  window.location.href = '';
-                //  break;
-             } else {
-                 alert("Incorrect Details");
              }
          });
      }
