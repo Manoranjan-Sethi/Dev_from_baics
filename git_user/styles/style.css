@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+#logo{
+    width: 5%;
+}
+#github-logo{
+    width: 50px;
+    border-radius: 50%;
+}
+#profileImg{
+    width: 30px;
+    border-radius: 50%;
+}
+#search{
+    width: 15%;
+}
+#search input#searchInput{
+    padding: 5px;
+    width: 100%;
+}
+#options{
+    width: 25%;
+}
+#options>ul#list{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+#list>li{
+    list-style-type: none;
+}
+#list>li>a{
+    text-decoration: none;
+    color: white;
+}
+#profile{
+    width: 55%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin: 20px;
+}
+.repocard{
+    border: 1px solid #cecece;
+    padding: 5px;
+}
